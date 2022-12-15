@@ -1,0 +1,21 @@
+{
+  "name": "season-date-parser",
+  "version": "0.0.8",
+  "description": "Returns the name of the seasons between the 2 dates you entered and the months of that season",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "season",
+    "date",
+    "date",
+    "parser",
+    "season",
+    "date",
+    "parser",
+    "dates"
+  ],
+  "author": "Taha Ibrahim Orhan",
+  "license": "MIT"
+}
