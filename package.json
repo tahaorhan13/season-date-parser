@@ -1,10 +1,14 @@
 {
   "name": "season-date-parser",
-  "version": "0.0.8",
+  "version": "0.1.1",
   "description": "Returns the name of the seasons between the 2 dates you entered and the months of that season",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tahaorhan13/season-date-parser.git"
   },
   "keywords": [
     "season",

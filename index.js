@@ -154,3 +154,80 @@ exports.ListSeasonDate = function(firstDate,lastDate){
     }
     return newValue;
 }
+
+exports.getWinter = function(firstDate, lastDate){
+    const range = dateRange(firstDate, lastDate);
+    let result = [];
+    const newArr=[];
+    for (let i = 0; i < range.length; i++) {
+        const monthly = range[i].split('-');
+        if ((monthly[1] == 1) || (monthly[1] == 2) || (monthly[1] == 12)) {
+            result.push(monthly);
+        }
+    }
+    for (let j = 0; j < result.length; j++) {
+        const filterDate = result[j].join('-')
+        newArr.push(filterDate);        
+    }
+    const newValue={
+        Winter:newArr
+    }
+    return newValue;
+}
+exports.getSummer = function(firstDate, lastDate){
+    const range = dateRange(firstDate, lastDate);
+    let result = [];
+    const newArr=[];
+    for (let i = 0; i < range.length; i++) {
+        const monthly = range[i].split('-');
+        if ((monthly[1] == 6) || (monthly[1] == 7) || (monthly[1] == 8)) {
+            result.push(monthly);
+        }
+    }
+    for (let j = 0; j < result.length; j++) {
+        const filterDate = result[j].join('-')
+        newArr.push(filterDate);        
+    }
+    const newValue={
+        Summer:newArr
+    }
+    return newValue;
+}
+exports.getSpring = function(firstDate, lastDate){
+    const range = dateRange(firstDate, lastDate);
+    let result = [];
+    const newArr=[];
+    for (let i = 0; i < range.length; i++) {
+        const monthly = range[i].split('-');
+        if ((monthly[1] == 3) || (monthly[1] == 4) || (monthly[1] == 5)) {
+            result.push(monthly);
+        }
+    }
+    for (let j = 0; j < result.length; j++) {
+        const filterDate = result[j].join('-')
+        newArr.push(filterDate);        
+    }
+    const newValue={
+        Spring:newArr
+    }
+    return newValue;
+}
+exports.getAutumn = function(firstDate, lastDate){
+    const range = dateRange(firstDate, lastDate);
+    let result = [];
+    const newArr=[];
+    for (let i = 0; i < range.length; i++) {
+        const monthly = range[i].split('-');
+        if ((monthly[1] == 9) || (monthly[1] == 10) || (monthly[1] == 11)) {
+            result.push(monthly);
+        }
+    }
+    for (let j = 0; j < result.length; j++) {
+        const filterDate = result[j].join('-')
+        newArr.push(filterDate);        
+    }
+    const newValue={
+        Autumn:newArr
+    }
+    return newValue;
+}

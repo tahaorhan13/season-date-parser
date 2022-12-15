@@ -5,12 +5,12 @@
 ```js
 const seasonDateParser = require('season-date-parser');
 
-const winter = seasonDateParser.dateParser('2022-05-13','2022-12-13','W') // Winter
-const summer =  seasonDateParser.dateParser('2022-05-13','2022-12-13','S') // Summer
-const spring =  seasonDateParser.dateParser('2022-05-13','2022-12-13','Sp') // Spring
-const autumn =  seasonDateParser.dateParser('2022-05-13','2022-12-13','A') // Autumn
+const winter = seasonDateParser.getWinter('2022-05-13','2022-12-13') // Winter
+const summer =  seasonDateParser.getSummer('2022-05-13','2022-12-13') // Summer
+const spring =  seasonDateParser.getSpring('2022-05-13','2022-12-13') // Spring
+const autumn =  seasonDateParser.getAutumn('2022-05-13','2022-12-13') // Autumn
 
-console.log(autumn) // [ { Season: 'Autumn' }, '2022-09-01', '2022-10-01', '2022-11-01' ]
+console.log(winter) // { Winter: [ '2021-01-01', '2021-02-01', '2021-12-01', '2022-01-01' ] }
 ```
 ```js
 const seasonDateParser = require('season-date-parser');
